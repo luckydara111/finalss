@@ -1,0 +1,447 @@
+*{
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #F7F4EF;
+}
+
+header{
+    position: sticky; 
+    top: 0;
+}
+
+.nav-bar{
+  height: 80px;
+    padding-left: 30px;
+    background-color: #F7F4EF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border-bottom: black 1px solid;
+}
+
+.cart{
+    width: 40px;
+}
+
+.logo img{
+    width: 40px;
+}
+
+.navbar ul{
+    padding-right: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    color: black;
+}
+
+.navbar li{
+    padding: 10px;
+}
+
+.navbar ul > li > a{
+    color: rgb(77, 77, 77);
+}
+
+.navbar ul > li > a:active{
+    color: rgb(0, 0, 0);
+}
+
+.navbar li a.shop-button{
+    font-size: 14px;
+    color: #000000;
+    padding: 10px;
+    border-radius: 100px;
+    border: 2px solid black;
+}
+
+.navbar li a.shop-button:hover{
+    background-color: #000000;
+    color: #F7F4EF;
+}
+
+
+
+
+.ordering {
+  align-items: center;
+    background-color: #f7f4ef;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 800px;
+  }
+  
+  .ordering .div {
+    background-color: #f7f4ef;
+    height: 1080px;
+  }
+  
+  .ordering .frame {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 19px;
+    position: absolute;
+    top: 230px;
+    left: 240px;
+  }
+  
+  .ordering .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-weight: 600;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ordering .frame-2 {
+    display: flex;
+    flex-direction: column;
+    width: 534px;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 22px 28px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  
+  .ordering .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ordering .p {
+    position: relative;
+    width: fit-content;
+    font-weight: 500;
+    font-style: italic;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .ordering .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .ordering .frame-3 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 19px;
+    position: absolute;
+    top: 753px;
+    left: 240px;
+  }
+  
+  .ordering .div-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 526px;
+    height: 131px;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 22px 28px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: #00000033;
+  }
+  
+  .ordering .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-weight: 400;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ordering .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 167px;
+    height: 152px;
+    align-items: center;
+    justify-content: center;
+    padding: 14.02px 0px;
+    position: absolute;
+    top: 520px;
+    left: 240px;
+    background-color: #ffffff;
+    border-radius: 9.35px;
+    border: 0.47px solid;
+    border-color: #00000080;
+  }
+  
+  .ordering .image {
+    position: relative;
+    width: 139.31px;
+    height: 139.31px;
+    margin-top: -7.79px;
+    margin-bottom: -7.79px;
+    object-fit: cover;
+  }
+  
+  .ordering .frame-4 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    position: absolute;
+    top: 559px;
+    left: 447px;
+  }
+  
+  .ordering .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20.4px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ordering .text-wrapper-6 {
+    position: relative;
+    width: fit-content;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20.4px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ordering .frame-5 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    top: 554px;
+    left: 633px;
+  }
+  
+  .ordering .text-wrapper-7 {
+    margin-top: -1px;
+    font-weight: 600;
+    font-size: 32px;
+    position: relative;
+    width: fit-content;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ordering .text-wrapper-8 {
+    font-weight: 500;
+    font-size: 24px;
+    position: relative;
+    width: fit-content;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ordering .frame-6 {
+    display: flex;
+    width: 1920px;
+    height: 110px;
+    align-items: center;
+    justify-content: center;
+    gap: 1222px;
+    padding: 21px 138px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f7f4ef;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #000000;
+  }
+  
+  .ordering .MAIN-LOGO {
+    position: relative;
+    width: 46px;
+    height: 63px;
+    margin-bottom: -1.5px;
+    margin-left: -47.58px;
+  }
+  
+  .ordering .frame-7 {
+    display: flex;
+    width: 471.16px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 28.11px;
+    position: relative;
+    margin-right: -43.58px;
+  }
+  
+  .ordering .frame-8 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .ordering .text-wrapper-9 {
+    margin-top: -1px;
+    color: #000000;
+    font-size: 20px;
+    white-space: nowrap;
+    position: relative;
+    width: fit-content;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ordering .text-wrapper-10 {
+    position: relative;
+    width: fit-content;
+    font-weight: 400;
+    color: #00000080;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .ordering .solar-cart-bold {
+    position: relative;
+    width: 41.5px;
+    height: 41.5px;
+  }
+  
+  .ordering .frame-9 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 20%;
+    height: 450px;
+    padding: 70px;
+    top: 230px;
+    background-color: #eceded;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  
+  .ordering .frame-10 {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 12px;
+    top: 330px;
+    left: 329px;
+  }
+  
+  .ordering .text-wrapper-11 {
+    font-weight: 200;
+    color: #000000;
+    font-size: 28px;
+  }
+  
+  .ordering .text-wrapper-12 {
+    font-weight: 700;
+    font-size: 36px;
+    position: relative;
+    width: 100%;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ordering .frame-11 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11.71px;
+    padding: 19px 35px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #000000;
+    border-radius: 48.03px;
+  }
+  
+  .ordering .text-wrapper-13 {
+    margin-top: -1.17px;
+    color: #ffffff;
+    font-size: 24px;
+    position: relative;
+    width: fit-content;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .ordering .frame-12 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 29px;
+    top: 86px;
+    width: 100%;
+  }
+  
+  .ordering .frame-13 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    font-size: 21px;
+  }
+  input[type="radio"]{
+    height: 1em;
+  }
+  .ordering .text-wrapper-14 {
+    position: fixed;
+    top: 837px;
+    left: 1355px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #c7b831;
+    font-size: 128px;
+    letter-spacing: 0;
+    line-height: normal;
+  }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Flower Bouquet</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <section class="nav-bar">
+                <div class="logo">
+                    <img src="img/MAIN LOGO.png" alt="">
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="./admin-login.html">Admin</a></li>
+                        <li><a href="./signup.html" class="shop-button">Sign Up</a></li>
+                    </ul>
+                </div>
+            </section>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="left-banner">
+                <p><b>Say it with flowers.</b><i> Shop stunning bouquets now! </i></p>
+                <img src="./img/LOGO 2.png" alt="">
+                <a href="./signup.html" class="shop-button">Sign up to shop now!</a>
+            </div>
+            <div class="right-banner">
+                <img src="./img/flower1.png" alt="">
+            </div>
+        </section>
+        <h3>VALENTINES DAY SPECIAL</h3>
+        <section class="previewz">
+                <div class="frame-16">
+                    <a href=""><img class="image-removebg-2" src="./img/flower1.png" /></a>
+                  <div class="frame-17">
+                    <div class="text-wrapper-8"><b>CARMELITA</b></div>
+                  </div>
+                </div>
+                <div class="frame-16">
+                    <a href=""><img class="image-removebg-2" src="./img/flower1.png" /></a>
+                  <div class="frame-17">
+                    <div class="text-wrapper-8"><b>GEORGIA</b></div>
+                  </div>
+                </div>
+                <div class="frame-16">
+                    <a href=""><img class="image-removebg-2" src="./img/flower1.png" /></a>
+                  <div class="frame-17">
+                    <div class="text-wrapper-8"><b>TERESSA</b></div>
+                  </div>
+                </div>
+</div>
+        </section>
+        <h1 class="count">Countdown Sale</h1>
+<div id="countdown">
+  <div id="days"></div>
+  <div id="hours"></div>
+  <div id="minutes"></div>
+  <div id="seconds"></div>
+    </main>
+    <footer>
+        <img src="./img/LOGO 2.png" alt="Company Logo" class="footer-logo">>
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Branches</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="./admin-login.html">Admin</a></li>
+            </ul>
+        </nav>
+        <div class="footer-icons">
+            <a href="#"><img src="./img/entypo-social_facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="./img/Vector.png" alt="Twitter"></a>
+            <a href="#"><img src="./img/ri_instagram-fill.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+<script>
+    var targetDate = new Date("2024-05-01T00:00:00").getTime();
+    var countdownInterval = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = targetDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+      document.getElementById("days").innerHTML = days + "d ";
+      document.getElementById("hours").innerHTML = hours + "h ";
+      document.getElementById("minutes").innerHTML = minutes + "m ";
+      document.getElementById("seconds").innerHTML = seconds + "s ";
+  
+      if (distance < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("countdown").innerHTML = "Sale has ended!";
+      }
+    }, 1000);
+  </script>
+</html>

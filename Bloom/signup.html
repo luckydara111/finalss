@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloom Flower Bouquet</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <img src="./img/bg.jpg" alt="blurd" class="blurd" />
+    <main>
+      <header>
+        <h4 class="loginin">Sign Up</h4>
+      </header>
+      <form>
+        <div class="form_wrapper">
+          <input id="username" type="text" required />
+          <label for="username">Name</label>
+          <i class="material-icons">person</i>
+        </div>
+        <div class="form_wrapper">
+          <input id="email" type="email" required />
+          <label for="email" class="email">Email</label>
+          <i class="material-icons">email</i>
+        </div>
+        <div class="form_wrapper">
+          <input id="password" type="password" required />
+          <label for="password">Password</label>
+          <i class="material-icons">lock</i>
+        </div>
+        <div class="form_wrapper">
+          <input id="passwordagain" type="password" required />
+          <label for="passwordagain">Confirm your Password</label>
+          <i class="material-icons">lock</i>
+        </div>
+        <button class="login" onclick="validateForm(event)">Sign Up</button>
+        <div class="new_account">
+          Already have an account ? <a href="index.html">Log In</a>
+        </div>
+      </form>
+    </main>
+
+    <script>
+      function validateForm(event) {
+        event.preventDefault();
+
+      var username = document.getElementById("username").value.trim();
+      var email = document.getElementById("email").value.trim();
+      var password = document.getElementById("password").value.trim();
+      var passwordAgain = document.getElementById("passwordagain").value.trim();
+
+  if (username === "" || email === "" || password === "" || passwordAgain === "") {
+    alert("Please fill in all fields.");
+    return;
+  }
+
+  if (password !== passwordAgain) {
+    alert("Passwords do not match.");
+    return;
+  }
+
+  window.location.href = "home.html";
+}
+
+    </script>
+  </body>
+</html>

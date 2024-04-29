@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <img src="./img/bg.jpg" alt="blurd" class="blurd" />
+    <main>
+      <header>
+        <h4 class="loginin">Login</h4>
+      </header>
+      <form id="loginForm">
+        <div class="form_wrapper">
+          <input id="username" type="text" required />
+          <label for="username">Email</label>
+          <i class="material-icons">person</i>
+        </div>
+        <div class="form_wrapper">
+          <input id="password" type="password" required />
+          <label for="password">Password</label>
+          <i class="material-icons">lock</i>
+        </div>
+        <div class="remember_box">
+          <div class="remember">
+            <input type="checkbox" />
+            Remember me
+          </div>
+          <a href="#" class="forgot">Forgot Password ?</a>
+        </div>
+        <button type="button" class="login" onclick="validateForm()">Login</button>
+        <div class="new_account">
+          Don't have an account ? <a href="./signup.html">Sign up</a>
+        </div>
+      </form>
+    </main>
+    <script>
+  function validateForm() {
+    var username = document.getElementById("username").value.trim();
+    var password = document.getElementById("password").value.trim();
+    if (username === "" || password === "") {
+      alert("Please fill in all fields.");
+      return;
+    } else {
+      window.location.href = "home.html";
+      document.getElementById("username").value = "";
+      document.getElementById("password").value = "";
+    }
+  }
+    </script>
+  </body>
+</html>
